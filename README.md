@@ -2,7 +2,7 @@
 
 This lab implements a production‑style secure network environment in Azure. The goal is to ensure all workloads communicate privately, securely, and through controlled paths.
 
-
+```
                          Internet
                             │
                     ┌───────┴────────┐
@@ -33,6 +33,8 @@ Key properties: the VM has no public IP; all its outbound traffic is
 forced through Azure Firewall via a route table; the storage account has
 public network access disabled and is only reachable through the private
 endpoint; Bastion is the only way in for RDP/SSH.
+
+---
 
 ## Project structure
 
@@ -111,6 +113,9 @@ az deployment group list \
 5. **Firewall logs**: enable diagnostic settings on the firewall (Log
    Analytics) to see allowed/denied traffic, and confirm your
    application rules are being hit as expected.
+
+
+
 
 
 
