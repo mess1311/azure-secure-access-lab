@@ -37,8 +37,7 @@ endpoint; Bastion is the only way in for RDP/SSH.
 ---
 
 ## Project structure
-
-
+```
 azure-secure-access-lab/
 ├── main.bicep
 ├── main.parameters.json
